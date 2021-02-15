@@ -1,0 +1,2 @@
+fix tailwindcss/lib/cli.js - remove shebang
+include proto-polyfill - and change all configutable to be true

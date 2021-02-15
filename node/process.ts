@@ -36,7 +36,7 @@ function getArguments() {
 const _argv: {
   [Deno.customInspect]: () => string;
   [key: number]: string;
-} = [];
+} = [Deno.execPath(), fromFileUrl(Deno.mainModule), ...Deno.args];
 
 Object.defineProperty(_argv, Deno.customInspect, {
   enumerable: false,
@@ -158,7 +158,7 @@ class Process extends EventEmitter {
    * https://nodejs.org/api/process.html#process_process_argv
    * Read permissions are required in order to get the executable route
    * */
-  argv = argv;
+  argv = _argv;
 
   /** https://nodejs.org/api/process.html#process_process_chdir_directory */
   chdir = chdir;
@@ -292,6 +292,8 @@ class Process extends EventEmitter {
 
   /** https://nodejs.org/api/process.html#process_process_versions */
   versions = versions;
+
+  hrtime = () => [1, 1];
 }
 
 /** https://nodejs.org/api/process.html#process_process */
