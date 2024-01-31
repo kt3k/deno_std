@@ -1,6 +1,6 @@
 {
   "name": "@std/io",
-  "version": "0.215.0",
+  "version": "0.216.0",
   "exports": {
     ".": "./mod.ts",
     "./buf_reader": "./buf_reader.ts",
