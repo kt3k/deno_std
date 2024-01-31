@@ -1,6 +1,6 @@
 {
   "name": "@std/url",
-  "version": "0.213.0",
+  "version": "0.213.1",
   "exports": {
     ".": "./mod.ts",
     "./basename": "./basename.ts",
