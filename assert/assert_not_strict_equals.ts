@@ -8,7 +8,7 @@ import { format } from "./_format.ts";
  *
  * @example
  * ```ts
- * import { assertNotStrictEquals } from "https://deno.land/std@$STD_VERSION/assert/assert_not_strict_equals.ts";
+ * import { assertNotStrictEquals } from "@std/assert/assert_not_strict_equals";
  *
  * assertNotStrictEquals(1, 1); // Doesn't throw
  * assertNotStrictEquals(1, 2); // Throws

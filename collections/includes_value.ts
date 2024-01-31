@@ -8,8 +8,8 @@
  *
  * @example
  * ```ts
- * import { includesValue } from "https://deno.land/std@$STD_VERSION/collections/includes_value.ts";
- * import { assertEquals } from "https://deno.land/std@$STD_VERSION/assert/assert_equals.ts";
+ * import { includesValue } from "@std/collections/includes_value";
+ * import { assertEquals } from "@std/assert/assert_equals";
  *
  * const input = {
  *   first: 33,

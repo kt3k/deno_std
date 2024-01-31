@@ -2,7 +2,7 @@
 import { equal } from "./equal.ts";
 import { format } from "./_format.ts";
 import { AssertionError } from "./assertion_error.ts";
-import { red } from "../fmt/colors.ts";
+import { red } from "@std/fmt/colors";
 import { buildMessage, diff, diffstr } from "./_diff.ts";
 import { CAN_NOT_DISPLAY } from "./_constants.ts";
 
@@ -15,7 +15,7 @@ import { CAN_NOT_DISPLAY } from "./_constants.ts";
  *
  * @example
  * ```ts
- * import { assertEquals } from "https://deno.land/std@$STD_VERSION/assert/assert_equals.ts";
+ * import { assertEquals } from "@std/assert/assert_equals";
  *
  * assertEquals("world", "world"); // Doesn't throw
  * assertEquals("hello", "world"); // Throws

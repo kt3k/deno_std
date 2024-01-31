@@ -3,7 +3,7 @@ import { format } from "./_format.ts";
 import { AssertionError } from "./assertion_error.ts";
 import { buildMessage, diff, diffstr } from "./_diff.ts";
 import { CAN_NOT_DISPLAY } from "./_constants.ts";
-import { red } from "../fmt/colors.ts";
+import { red } from "@std/fmt/colors";
 
 /**
  * Make an assertion that `actual` and `expected` are strictly equal. If
@@ -11,7 +11,7 @@ import { red } from "../fmt/colors.ts";
  *
  * @example
  * ```ts
- * import { assertStrictEquals } from "https://deno.land/std@$STD_VERSION/assert/assert_strict_equals.ts";
+ * import { assertStrictEquals } from "@std/assert/assert_strict_equals";
  *
  * const a = {};
  * const b = a;

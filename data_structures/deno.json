@@ -1,0 +1,11 @@
+{
+  "name": "@std/data_structures",
+  "version": "0.213.0",
+  "exports": {
+    ".": "./mod.ts",
+    "./binary_heap": "./binary_heap.ts",
+    "./binary_search_tree": "./binary_search_tree.ts",
+    "./comparators": "./comparators.ts",
+    "./red_black_tree": "./red_black_tree.ts"
+  }
+}

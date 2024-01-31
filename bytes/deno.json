@@ -1,0 +1,16 @@
+{
+  "name": "@std/bytes",
+  "version": "0.213.0",
+  "exports": {
+    ".": "./mod.ts",
+    "./concat": "./concat.ts",
+    "./copy": "./copy.ts",
+    "./ends_with": "./ends_with.ts",
+    "./equals": "./equals.ts",
+    "./includes_needle": "./includes_needle.ts",
+    "./index_of_needle": "./index_of_needle.ts",
+    "./last_index_of_needle": "./last_index_of_needle.ts",
+    "./repeat": "./repeat.ts",
+    "./starts_with": "./starts_with.ts"
+  }
+}

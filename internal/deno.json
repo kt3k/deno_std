@@ -1,0 +1,8 @@
+{
+  "name": "@std/internal",
+  "version": "0.213.0",
+  "exports": {
+    ".": "./mod.ts",
+    "./warn_on_deprecated_api": "./warn_on_deprecated_api.ts"
+  }
+}

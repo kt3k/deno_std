@@ -37,8 +37,8 @@ import {
   UstarFields,
   ustarStructure,
 } from "./_common.ts";
-import { readAll } from "../io/read_all.ts";
-import type { Reader } from "../io/types.ts";
+import { readAll } from "@std/io/read_all";
+import type { Reader } from "@std/io/types";
 
 /**
  * Extend TarMeta with the `linkName` property so that readers can access
@@ -182,10 +182,10 @@ export class TarEntry implements Reader {
  *
  * @example
  * ```ts
- * import { Untar } from "https://deno.land/std@$STD_VERSION/archive/untar.ts";
- * import { ensureFile } from "https://deno.land/std@$STD_VERSION/fs/ensure_file.ts";
- * import { ensureDir } from "https://deno.land/std@$STD_VERSION/fs/ensure_dir.ts";
- * import { copy } from "https://deno.land/std@$STD_VERSION/io/copy.ts";
+ * import { Untar } from "@std/archive/untar";
+ * import { ensureFile } from "@std/fs/ensure_file";
+ * import { ensureDir } from "@std/fs/ensure_dir";
+ * import { copy } from "@std/io/copy";
  *
  * using reader = await Deno.open("./out.tar", { read: true });
  * const untar = new Untar(reader);

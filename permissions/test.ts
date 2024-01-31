@@ -1,6 +1,6 @@
 // Copyright 2018-2024 the Deno authors. All rights reserved. MIT license.
 import { grant, grantOrThrow } from "./mod.ts";
-import { assert, assertEquals, assertRejects } from "../assert/mod.ts";
+import { assert, assertEquals, assertRejects } from "@std/assert";
 
 Deno.test({
   name: "grant basic",

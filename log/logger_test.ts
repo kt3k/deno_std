@@ -1,5 +1,5 @@
 // Copyright 2018-2024 the Deno authors. All rights reserved. MIT license.
-import { assert, assertEquals, assertMatch } from "../assert/mod.ts";
+import { assert, assertEquals, assertMatch } from "@std/assert";
 import { Logger, LogRecord } from "./logger.ts";
 import { LevelName, LogLevels } from "./levels.ts";
 import { BaseHandler } from "./base_handler.ts";

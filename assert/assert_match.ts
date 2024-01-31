@@ -7,7 +7,7 @@ import { AssertionError } from "./assertion_error.ts";
  *
  * @example
  * ```ts
- * import { assertMatch } from "https://deno.land/std@$STD_VERSION/assert/assert_match.ts";
+ * import { assertMatch } from "@std/assert/assert_match";
  *
  * assertMatch("Raptor", RegExp(/Raptor/)); // Doesn't throw
  * assertMatch("Denosaurus", RegExp(/Raptor/)); // Throws

@@ -1,0 +1,9 @@
+{
+  "name": "@std/archive",
+  "version": "0.213.0",
+  "exports": {
+    ".": "./mod.ts",
+    "./tar": "./tar.ts",
+    "./untar": "./untar.ts"
+  }
+}

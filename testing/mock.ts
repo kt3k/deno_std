@@ -25,8 +25,8 @@
  *   assertSpyCall,
  *   assertSpyCalls,
  *   spy,
- * } from "https://deno.land/std@$STD_VERSION/testing/mock.ts";
- * import { assertEquals } from "https://deno.land/std@$STD_VERSION/assert/assert_equals.ts";
+ * } from "@std/testing/mock";
+ * import { assertEquals } from "@std/assert/assert_equals";
  *
  * function multiply(a: number, b: number): number {
  *   return a * b;
@@ -71,8 +71,8 @@
  *   assertSpyCall,
  *   assertSpyCalls,
  *   spy,
- * } from "https://deno.land/std@$STD_VERSION/testing/mock.ts";
- * import { assertEquals } from "https://deno.land/std@$STD_VERSION/assert/assert_equals.ts";
+ * } from "@std/testing/mock";
+ * import { assertEquals } from "@std/assert/assert_equals";
  *
  * function multiply(a: number, b: number): number {
  *   return a * b;
@@ -147,8 +147,8 @@
  *   assertSpyCalls,
  *   returnsNext,
  *   stub,
- * } from "https://deno.land/std@$STD_VERSION/testing/mock.ts";
- * import { assertEquals } from "https://deno.land/std@$STD_VERSION/assert/assert_equals.ts";
+ * } from "@std/testing/mock";
+ * import { assertEquals } from "@std/assert/assert_equals";
  *
  * function randomInt(lowerBound: number, upperBound: number): number {
  *   return lowerBound + Math.floor(Math.random() * (upperBound - lowerBound));
@@ -205,8 +205,8 @@
  * import {
  *   assertSpyCalls,
  *   spy,
- * } from "https://deno.land/std@$STD_VERSION/testing/mock.ts";
- * import { FakeTime } from "https://deno.land/std@$STD_VERSION/testing/time.ts";
+ * } from "@std/testing/mock";
+ * import { FakeTime } from "@std/testing/time";
  *
  * function secondInterval(cb: () => void): number {
  *   return setInterval(cb, 1000);
@@ -236,10 +236,10 @@
  * @module
  */
 
-import { assertEquals } from "../assert/assert_equals.ts";
-import { assertIsError } from "../assert/assert_is_error.ts";
-import { assertRejects } from "../assert/assert_rejects.ts";
-import { AssertionError } from "../assert/assertion_error.ts";
+import { assertEquals } from "@std/assert/assert_equals";
+import { assertIsError } from "@std/assert/assert_is_error";
+import { assertRejects } from "@std/assert/assert_rejects";
+import { AssertionError } from "@std/assert/assertion_error";
 
 /** An error related to spying on a function or instance method. */
 export class MockError extends Error {

@@ -2,7 +2,7 @@
 // Copyright 2019 Allain Lalonde. All rights reserved. ISC License.
 
 import type { AnyConstructor, Matcher, MatcherContext } from "./_types.ts";
-import { AssertionError } from "../assert/assertion_error.ts";
+import { AssertionError } from "@std/assert/assertion_error";
 import {
   toBe,
   toBeCloseTo,

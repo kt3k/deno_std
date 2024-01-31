@@ -45,9 +45,9 @@ function charWidth(ch: string) {
  *
  * @example
  * ```ts
- * import { unicodeWidth } from "https://deno.land/std@$STD_VERSION/console/unicode_width.ts";
- * import { assertEquals } from "https://deno.land/std@$STD_VERSION/assert/assert_equals.ts";
- * import { stripAnsiCode } from "https://deno.land/std@$STD_VERSION/fmt/colors.ts";
+ * import { unicodeWidth } from "@std/console/unicode_width";
+ * import { assertEquals } from "@std/assert/assert_equals";
+ * import { stripAnsiCode } from "@std/fmt/colors";
  *
  * assertEquals(unicodeWidth("hello world"), 11);
  * assertEquals(unicodeWidth("天地玄黃宇宙洪荒"), 16);

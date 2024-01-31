@@ -1,6 +1,6 @@
 // Copyright 2018-2024 the Deno authors. All rights reserved. MIT license.
-import { dirname } from "../path/dirname.ts";
-import { resolve } from "../path/resolve.ts";
+import { dirname } from "@std/path/dirname";
+import { resolve } from "@std/path/resolve";
 import { ensureDir, ensureDirSync } from "./ensure_dir.ts";
 import { getFileInfoType } from "./_get_file_info_type.ts";
 import { toPathString } from "./_to_path_string.ts";

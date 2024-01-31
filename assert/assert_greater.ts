@@ -8,7 +8,7 @@ import { AssertionError } from "./assertion_error.ts";
  *
  * @example
  * ```ts
- * import { assertGreater } from "https://deno.land/std@$STD_VERSION/assert/assert_greater.ts";
+ * import { assertGreater } from "@std/assert/assert_greater";
  *
  * assertGreater(2, 1); // Doesn't throw
  * assertGreater(1, 1); // Throws

@@ -2,8 +2,8 @@
 
 // This file is copied from `std/assert`.
 
-import { AssertionError } from "../assert/assertion_error.ts";
-import { red } from "../fmt/colors.ts";
+import { AssertionError } from "@std/assert/assertion_error";
+import { red } from "@std/fmt/colors";
 import { CAN_NOT_DISPLAY } from "./_constants.ts";
 import { buildMessage, diff, diffstr } from "./_diff.ts";
 import { equal } from "./_equal.ts";
@@ -19,7 +19,7 @@ import { AssertEqualsOptions } from "./_types.ts";
  *
  * @example
  * ```ts
- * import { assertEquals } from "https://deno.land/std@$STD_VERSION/assert/assert_equals.ts";
+ * import { assertEquals } from "@std/assert/assert_equals";
  *
  * assertEquals("world", "world"); // Doesn't throw
  * assertEquals("hello", "world"); // Throws

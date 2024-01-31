@@ -12,7 +12,7 @@ import {
   type ReadOptions,
   type RecordWithColumn,
 } from "./_io.ts";
-import { assert } from "../assert/assert.ts";
+import { assert } from "@std/assert/assert";
 
 export { ParseError, type ParseResult, ReadOptions, type RecordWithColumn };
 
@@ -301,7 +301,7 @@ export interface ParseOptions extends ReadOptions {
  *
  * @example
  * ```ts
- * import { parse } from "https://deno.land/std@$STD_VERSION/csv/parse.ts";
+ * import { parse } from "@std/csv/parse";
  * const string = "a,b,c\nd,e,f";
  *
  * console.log(
@@ -325,7 +325,7 @@ export function parse(input: string, opt?: undefined): string[][];
  *
  * @example
  * ```ts
- * import { parse } from "https://deno.land/std@$STD_VERSION/csv/parse.ts";
+ * import { parse } from "@std/csv/parse";
  * const string = "a,b,c\nd,e,f";
  *
  * console.log(

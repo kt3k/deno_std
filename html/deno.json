@@ -1,0 +1,9 @@
+{
+  "name": "@std/html",
+  "version": "0.213.0",
+  "exports": {
+    ".": "./mod.ts",
+    "./entities": "./entities.ts",
+    "./named_entity_list.json": "./named_entity_list.json"
+  }
+}

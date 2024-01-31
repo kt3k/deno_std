@@ -21,7 +21,7 @@ export const BYTES_PER_PIXEL = 4;
  *
  * @example
  * ```ts
- * import { getRowPadding } from "https://deno.land/std@$STD_VERSION/webgpu/row_padding.ts";
+ * import { getRowPadding } from "@std/webgpu/row_padding";
  *
  * getRowPadding(2); // { unpadded: 8, padded: 256 }
  * ```
@@ -50,7 +50,7 @@ export function getRowPadding(width: number): Padding {
  *
  * @example
  * ```ts
- * import { resliceBufferWithPadding } from "https://deno.land/std@$STD_VERSION/webgpu/row_padding.ts";
+ * import { resliceBufferWithPadding } from "@std/webgpu/row_padding";
  *
  * const input = new Uint8Array([0, 255, 0, 255, 120, 120, 120]);
  * resliceBufferWithPadding(input, 1, 1); // Uint8Array(4) [ 0, 255, 0, 255 ]

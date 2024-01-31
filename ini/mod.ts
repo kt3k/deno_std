@@ -11,7 +11,7 @@
  *
  * @example
  * ```ts
- * import * as ini from "https://deno.land/std@$STD_VERSION/ini/mod.ts";
+ * import * as ini from "@std/ini";
  * const iniFile = `# Example configuration file
  * Global Key=Some data here
  *
@@ -58,7 +58,7 @@
  *
  * @example
  * ```ts
- * import { IniMap } from "https://deno.land/std@$STD_VERSION/ini/mod.ts";
+ * import { IniMap } from "@std/ini";
  * const ini = new IniMap();
  * ini.set("section1", "keyA", 100)
  * console.log(ini.toString())
@@ -84,7 +84,7 @@
  *
  * @example
  * ```ts
- * import { IniMap } from "https://deno.land/std@$STD_VERSION/ini/mod.ts";
+ * import { IniMap } from "@std/ini";
  * const iniFile = `# Example of key/value arrays
  * [section1]
  * key1=This key

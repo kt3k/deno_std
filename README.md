@@ -8,7 +8,7 @@ High-quality APIs for [Deno](https://deno.com/) and the web. Use fearlessly.
 ## Get Started
 
 ```ts
-import { copy } from "https://deno.land/std@$STD_VERSION/fs/copy.ts";
+import { copy } from "@std/fs/copy";
 
 await copy("./foo", "./bar");
 ```
@@ -25,46 +25,26 @@ Check out the documentation [here](https://deno.land/std?doc).
 
    Good:
    ```ts
-   import { copy } from "https://deno.land/std@$STD_VERSION/fs/copy.ts";
+   import { copy } from "@std/fs/copy";
    ```
 
 1. Only import modules that you require.
 
    Bad (when using only one function):
    ```ts
-   import * as fs from "https://deno.land/std@$STD_VERSION/fs/mod.ts";
+   import * as fs from "@std/fs";
    ```
 
    Good (when using only one function):
    ```ts
-   import { copy } from "https://deno.land/std@$STD_VERSION/fs/copy.ts";
+   import { copy } from "@std/fs/copy";
    ```
 
    Good (when using multiple functions):
    ```ts
-   import * as fs from "https://deno.land/std@$STD_VERSION/fs/mod.ts";
+   import * as fs from "@std/fs";
    ```
 
-1. Do not import symbols with an underscore in the name.
-
-   Bad:
-   ```ts
-   import { _format } from "https://deno.land/std@$STD_VERSION/path/_common/format.ts";
-   ```
-
-1. Do not import modules with an underscore in the path.
-
-   Bad:
-   ```ts
-   import { filterInPlace } from "https://deno.land/std@$STD_VERSION/collections/_utils.ts";
-   ```
-
-1. Do not import test modules or test data.
-
-   Bad:
-   ```ts
-   import { test } from "https://deno.land/std@$STD_VERSION/front_matter/test.ts";
-   ```
 
 ## Stability
 

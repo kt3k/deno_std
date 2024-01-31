@@ -2,7 +2,7 @@
 
 // This file is copied from `std/assert`.
 
-import { AssertionError } from "../assert/assertion_error.ts";
+import { AssertionError } from "@std/assert/assertion_error";
 import { CAN_NOT_DISPLAY } from "./_constants.ts";
 import { equal } from "./_equal.ts";
 import { AssertEqualsOptions } from "./_types.ts";
@@ -17,7 +17,7 @@ type AssertNotEqualsOptions = Omit<AssertEqualsOptions, "formatter">;
  *
  * @example
  * ```ts
- * import { assertNotEquals } from "https://deno.land/std@$STD_VERSION/assert/assert_not_equals.ts";
+ * import { assertNotEquals } from "@std/assert/assert_not_equals";
  *
  * assertNotEquals(1, 2); // Doesn't throw
  * assertNotEquals(1, 1); // Throws

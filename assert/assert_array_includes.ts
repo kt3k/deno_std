@@ -15,7 +15,7 @@ export type ArrayLikeArg<T> = ArrayLike<T> & object;
  *
  * @example
  * ```ts
- * import { assertArrayIncludes } from "https://deno.land/std@$STD_VERSION/assert/assert_array_includes.ts";
+ * import { assertArrayIncludes } from "@std/assert/assert_array_includes";
  *
  * assertArrayIncludes([1, 2], [2]); // Doesn't throw
  * assertArrayIncludes([1, 2], [3]); // Throws

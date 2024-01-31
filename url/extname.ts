@@ -1,7 +1,7 @@
 // Copyright 2018-2024 the Deno authors. All rights reserved. MIT license.
 // This module is browser compatible.
 
-import { extname as posixExtname } from "../path/posix/extname.ts";
+import { extname as posixExtname } from "@std/path/posix/extname";
 import { strip } from "./_strip.ts";
 
 /**
@@ -11,7 +11,7 @@ import { strip } from "./_strip.ts";
  *
  * @example
  * ```ts
- * import { extname } from "https://deno.land/std@$STD_VERSION/url/extname.ts";
+ * import { extname } from "@std/url/extname";
  *
  * console.log(extname("https://deno.land/std/path/mod.ts")); // ".ts"
  * console.log(extname("https://deno.land/std/path/mod")); // ""

@@ -1,0 +1,15 @@
+{
+  "name": "@std/media_types",
+  "version": "0.213.0",
+  "exports": {
+    ".": "./mod.ts",
+    "./content_type": "./content_type.ts",
+    "./extension": "./extension.ts",
+    "./extensions_by_type": "./extensions_by_type.ts",
+    "./format_media_type": "./format_media_type.ts",
+    "./get_charset": "./get_charset.ts",
+    "./parse_media_type": "./parse_media_type.ts",
+    "./type_by_extension": "./type_by_extension.ts",
+    "./vendor/mime-db.v1.52.0": "./vendor/mime-db.v1.52.0.ts"
+  }
+}

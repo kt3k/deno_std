@@ -8,7 +8,7 @@ import { AssertionError } from "./assertion_error.ts";
  *
  * @example
  * ```ts
- * import { assertLessOrEqual } from "https://deno.land/std@$STD_VERSION/assert/assert_less_or_equal.ts";
+ * import { assertLessOrEqual } from "@std/assert/assert_less_or_equal";
  *
  * assertLessOrEqual(1, 2); // Doesn't throw
  * assertLessOrEqual(1, 1); // Doesn't throw

@@ -8,7 +8,7 @@ import { AssertionError } from "./assertion_error.ts";
  *
  * @example
  * ```ts
- * import { assertThrows } from "https://deno.land/std@$STD_VERSION/assert/assert_throws.ts";
+ * import { assertThrows } from "@std/assert/assert_throws";
  *
  * assertThrows(() => { throw new TypeError("hello world!"); }); // Doesn't throw
  * assertThrows(() => console.log("hello world!")); // Throws
@@ -25,7 +25,7 @@ export function assertThrows(
  *
  * @example
  * ```ts
- * import { assertThrows } from "https://deno.land/std@$STD_VERSION/assert/assert_throws.ts";
+ * import { assertThrows } from "@std/assert/assert_throws";
  *
  * assertThrows(() => { throw new TypeError("hello world!"); }, TypeError); // Doesn't throw
  * assertThrows(() => { throw new TypeError("hello world!"); }, RangeError); // Throws

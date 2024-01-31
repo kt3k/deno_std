@@ -5,7 +5,7 @@ import {
   assertInstanceOf,
   assertRejects,
   assertStrictEquals,
-} from "../assert/mod.ts";
+} from "@std/assert";
 
 // https://dom.spec.whatwg.org/#interface-AbortSignal
 function assertIsDefaultAbortReason(reason: unknown) {

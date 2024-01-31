@@ -24,7 +24,7 @@ export interface DebouncedFunction<T extends Array<unknown>> {
  *
  * @example
  * ```
- * import { debounce } from "https://deno.land/std@$STD_VERSION/async/debounce.ts";
+ * import { debounce } from "@std/async/debounce";
  *
  * const log = debounce(
  *   (event: Deno.FsEvent) =>

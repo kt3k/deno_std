@@ -1,10 +1,10 @@
 // Copyright 2018-2024 the Deno authors. All rights reserved. MIT license.
-import { assert, assertEquals, assertInstanceOf, fail } from "../assert/mod.ts";
+import { assert, assertEquals, assertInstanceOf, fail } from "@std/assert";
 import { crypto as stdCrypto } from "./mod.ts";
-import { repeat } from "../bytes/repeat.ts";
-import { dirname, fromFileUrl } from "../path/mod.ts";
+import { repeat } from "@std/bytes/repeat";
+import { dirname, fromFileUrl } from "@std/path";
 import { DigestAlgorithm, digestAlgorithms } from "./_wasm/mod.ts";
-import { encodeHex } from "../encoding/hex.ts";
+import { encodeHex } from "@std/encoding/hex";
 
 const moduleDir = dirname(fromFileUrl(import.meta.url));
 
@@ -170,7 +170,7 @@ Deno.test("digest() keeps memory usage reasonable with large inputs", async () =
   const code = `
     import { crypto as stdCrypto } from "./mod.ts";
     import { instantiateWithInstance } from "./_wasm/lib/deno_std_wasm_crypto.generated.mjs";
-    import { encodeHex } from "../encoding/hex.ts";
+    import { encodeHex } from "@std/encoding/hex";
 
     const { memory } = instantiateWithInstance().instance.exports;
 
@@ -252,7 +252,7 @@ Deno.test("digest() keeps memory usage reasonable with many calls", async () => 
   const code = `
     import { crypto as stdCrypto } from "./mod.ts";
     import { instantiateWithInstance } from "./_wasm/lib/deno_std_wasm_crypto.generated.mjs";
-    import { encodeHex } from "../encoding/hex.ts";
+    import { encodeHex } from "@std/encoding/hex";
 
     const { memory } = instantiateWithInstance().instance.exports;
 

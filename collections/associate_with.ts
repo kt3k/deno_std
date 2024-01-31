@@ -8,8 +8,8 @@
  *
  * @example
  * ```ts
- * import { associateWith } from "https://deno.land/std@$STD_VERSION/collections/associate_with.ts";
- * import { assertEquals } from "https://deno.land/std@$STD_VERSION/assert/assert_equals.ts";
+ * import { associateWith } from "@std/collections/associate_with";
+ * import { assertEquals } from "@std/assert/assert_equals";
  *
  * const names = ["Kim", "Lara", "Jonathan"];
  * const namesToLength = associateWith(names, (it) => it.length);

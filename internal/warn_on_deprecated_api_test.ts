@@ -1,5 +1,5 @@
 // Copyright 2018-2024 the Deno authors. All rights reserved. MIT license.
-import { assertEquals } from "../assert/assert_equals.ts";
+import { assertEquals } from "@std/assert/assert_equals";
 import { warnOnDeprecatedApi } from "./warn_on_deprecated_api.ts";
 
 Deno.test("warnDeprecatedApi()", async () => {

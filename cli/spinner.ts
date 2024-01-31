@@ -80,7 +80,7 @@ export class Spinner {
    *
    * @example
    * ```ts
-   * import { Spinner } from "https://deno.land/std@$STD_VERSION/cli/spinner.ts";
+   * import { Spinner } from "@std/cli/spinner";
    *
    * const spinner = new Spinner({ message: "Loading..." });
    * ```
@@ -112,7 +112,7 @@ export class Spinner {
    *
    * @example
    * ```ts
-   * import { Spinner } from "https://deno.land/std@$STD_VERSION/cli/spinner.ts";
+   * import { Spinner } from "@std/cli/spinner";
    *
    * const spinner = new Spinner({ message: "Loading..." });
    * spinner.start();
@@ -139,7 +139,7 @@ export class Spinner {
    *
    * @example
    * ```ts
-   * import { Spinner } from "https://deno.land/std@$STD_VERSION/cli/spinner.ts";
+   * import { Spinner } from "@std/cli/spinner";
    *
    * const spinner = new Spinner({ message: "Loading..." });
    * spinner.start();

@@ -1,0 +1,11 @@
+{
+  "name": "@std/webgpu",
+  "version": "0.213.0",
+  "exports": {
+    ".": "./mod.ts",
+    "./create_capture": "./create_capture.ts",
+    "./describe_texture_format": "./describe_texture_format.ts",
+    "./row_padding": "./row_padding.ts",
+    "./texture_with_data": "./texture_with_data.ts"
+  }
+}

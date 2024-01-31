@@ -91,7 +91,7 @@
  *   assertEquals,
  *   assertStrictEquals,
  *   assertThrows,
- * } from "https://deno.land/std@$STD_VERSION/assert/mod.ts";
+ * } from "@std/assert";
  *
  * class User {
  *   static users: Map<string, User> = new Map();
@@ -157,13 +157,13 @@
  *   assertEquals,
  *   assertStrictEquals,
  *   assertThrows,
- * } from "https://deno.land/std@$STD_VERSION/assert/mod.ts";
+ * } from "@std/assert";
  * import {
  *   afterEach,
  *   beforeEach,
  *   describe,
  *   it,
- * } from "https://deno.land/std@$STD_VERSION/testing/bdd.ts";
+ * } from "@std/testing/bdd";
  *
  * class User {
  *   static users: Map<string, User> = new Map();
@@ -240,11 +240,11 @@
  *   assertEquals,
  *   assertStrictEquals,
  *   assertThrows,
- * } from "https://deno.land/std@$STD_VERSION/assert/mod.ts";
+ * } from "@std/assert";
  * import {
  *   describe,
  *   it,
- * } from "https://deno.land/std@$STD_VERSION/testing/bdd.ts";
+ * } from "@std/testing/bdd";
  *
  * class User {
  *   static users: Map<string, User> = new Map();
@@ -321,11 +321,11 @@
  *   assertEquals,
  *   assertStrictEquals,
  *   assertThrows,
- * } from "https://deno.land/std@$STD_VERSION/assert/mod.ts";
+ * } from "@std/assert";
  * import {
  *   describe,
  *   it,
- * } from "https://deno.land/std@$STD_VERSION/testing/bdd.ts";
+ * } from "@std/testing/bdd";
  *
  * class User {
  *   static users: Map<string, User> = new Map();

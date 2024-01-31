@@ -1,5 +1,5 @@
 // Copyright 2018-2024 the Deno authors. All rights reserved. MIT license.
-import { assert } from "../assert/mod.ts";
+import { assert } from "@std/assert";
 import { ALL } from "./constants.ts";
 import { isRange } from "./is_range.ts";
 

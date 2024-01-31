@@ -1,10 +1,10 @@
 // Copyright 2018-2024 the Deno authors. All rights reserved. MIT license.
 
-import { basename } from "../path/basename.ts";
-import { join } from "../path/join.ts";
-import { resolve } from "../path/resolve.ts";
+import { basename } from "@std/path/basename";
+import { join } from "@std/path/join";
+import { resolve } from "@std/path/resolve";
 import { ensureDir, ensureDirSync } from "./ensure_dir.ts";
-import { assert } from "../assert/assert.ts";
+import { assert } from "@std/assert/assert";
 import { getFileInfoType } from "./_get_file_info_type.ts";
 import { toPathString } from "./_to_path_string.ts";
 import { isSubdir } from "./_is_subdir.ts";
@@ -254,7 +254,7 @@ function copyDirSync(
  *
  * @example
  * ```ts
- * import { copy } from "https://deno.land/std@$STD_VERSION/fs/copy.ts";
+ * import { copy } from "@std/fs/copy";
  * copy("./foo", "./bar"); // returns a promise
  * ```
  *
@@ -300,7 +300,7 @@ export async function copy(
  *
  * @example
  * ```ts
- * import { copySync } from "https://deno.land/std@$STD_VERSION/fs/copy.ts";
+ * import { copySync } from "@std/fs/copy";
  * copySync("./foo", "./bar"); // void
  * ```
  * @param src the file/directory path.

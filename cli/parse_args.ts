@@ -9,14 +9,14 @@
  *
  * @example
  * ```ts
- * import { parseArgs } from "https://deno.land/std@$STD_VERSION/cli/parse_args.ts";
+ * import { parseArgs } from "@std/cli/parse_args";
  *
  * console.dir(parseArgs(Deno.args));
  * ```
  *
  * @module
  */
-import { assertExists } from "../assert/assert_exists.ts";
+import { assertExists } from "@std/assert/assert_exists";
 
 /** Combines recursively all intersection types and returns a new single type. */
 type Id<TRecord> = TRecord extends Record<string, unknown>
@@ -271,7 +271,7 @@ export interface ParseOptions<
    *  @example
    * ```ts
    * // $ deno run example.ts -- a arg1
-   * import { parseArgs } from "https://deno.land/std@$STD_VERSION/cli/parse_args.ts";
+   * import { parseArgs } from "@std/cli/parse_args";
    * console.dir(parseArgs(Deno.args, { "--": false }));
    * // output: { _: [ "a", "arg1" ] }
    * console.dir(parseArgs(Deno.args, { "--": true }));
@@ -398,13 +398,13 @@ function hasKey(obj: NestedMapping, keys: string[]): boolean {
  *
  * @example
  * ```ts
- * import { parseArgs } from "https://deno.land/std@$STD_VERSION/cli/parse_args.ts";
+ * import { parseArgs } from "@std/cli/parse_args";
  * const parsedArgs = parseArgs(Deno.args);
  * ```
  *
  * @example
  * ```ts
- * import { parseArgs } from "https://deno.land/std@$STD_VERSION/cli/parse_args.ts";
+ * import { parseArgs } from "@std/cli/parse_args";
  * const parsedArgs = parseArgs(["--foo", "--bar=baz", "./quux.txt"]);
  * // parsedArgs: { foo: true, bar: "baz", _: ["./quux.txt"] }
  * ```

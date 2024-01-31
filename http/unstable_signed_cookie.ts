@@ -1,5 +1,5 @@
 // Copyright 2018-2024 the Deno authors. All rights reserved. MIT license.
-import { decodeHex, encodeHex } from "../encoding/hex.ts";
+import { decodeHex, encodeHex } from "@std/encoding/hex";
 
 const encoder = new TextEncoder();
 
@@ -16,8 +16,8 @@ function splitByLast(value: string, separator: string): [string, string] {
  *
  * @example
  * ```ts
- * import { signCookie } from "https://deno.land/std@$STD_VERSION/http/unstable_signed_cookie.ts";
- * import { setCookie } from "https://deno.land/std@$STD_VERSION/http/cookie.ts";
+ * import { signCookie } from "@std/http/unstable_signed_cookie";
+ * import { setCookie } from "@std/http/cookie";
  *
  * const key = await crypto.subtle.generateKey(
  *   { name: "HMAC", hash: "SHA-256" },
@@ -50,8 +50,8 @@ export async function signCookie(
  *
  * @example
  * ```ts
- * import { verifyCookie } from "https://deno.land/std@$STD_VERSION/http/unstable_signed_cookie.ts";
- * import { getCookies } from "https://deno.land/std@$STD_VERSION/http/cookie.ts";
+ * import { verifyCookie } from "@std/http/unstable_signed_cookie";
+ * import { getCookies } from "@std/http/cookie";
  *
  * const key = await crypto.subtle.generateKey(
  *   { name: "HMAC", hash: "SHA-256" },
@@ -86,8 +86,8 @@ export async function verifyCookie(
  *
  * @example
  * ```ts
- * import { verifyCookie, parseSignedCookie } from "https://deno.land/std@$STD_VERSION/http/unstable_signed_cookie.ts";
- * import { getCookies } from "https://deno.land/std@$STD_VERSION/http/cookie.ts";
+ * import { verifyCookie, parseSignedCookie } from "@std/http/unstable_signed_cookie";
+ * import { getCookies } from "@std/http/cookie";
  *
  * const key = await crypto.subtle.generateKey(
  *   { name: "HMAC", hash: "SHA-256" },

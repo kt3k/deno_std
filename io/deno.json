@@ -1,0 +1,29 @@
+{
+  "name": "@std/io",
+  "version": "0.213.0",
+  "exports": {
+    ".": "./mod.ts",
+    "./buf_reader": "./buf_reader.ts",
+    "./buf_writer": "./buf_writer.ts",
+    "./buffer": "./buffer.ts",
+    "./copy": "./copy.ts",
+    "./copy_n": "./copy_n.ts",
+    "./limited_reader": "./limited_reader.ts",
+    "./multi_reader": "./multi_reader.ts",
+    "./read_all": "./read_all.ts",
+    "./read_delim": "./read_delim.ts",
+    "./read_int": "./read_int.ts",
+    "./read_lines": "./read_lines.ts",
+    "./read_long": "./read_long.ts",
+    "./read_range": "./read_range.ts",
+    "./read_short": "./read_short.ts",
+    "./read_string_delim": "./read_string_delim.ts",
+    "./slice_long_to_bytes": "./slice_long_to_bytes.ts",
+    "./string_reader": "./string_reader.ts",
+    "./string_writer": "./string_writer.ts",
+    "./to_readable_stream": "./to_readable_stream.ts",
+    "./to_writable_stream": "./to_writable_stream.ts",
+    "./types": "./types.ts",
+    "./write_all": "./write_all.ts"
+  }
+}

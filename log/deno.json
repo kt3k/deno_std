@@ -1,0 +1,14 @@
+{
+  "name": "@std/log",
+  "version": "0.213.0",
+  "exports": {
+    ".": "./mod.ts",
+    "./base_handler": "./base_handler.ts",
+    "./console_handler": "./console_handler.ts",
+    "./file_handler": "./file_handler.ts",
+    "./formatters": "./formatters.ts",
+    "./levels": "./levels.ts",
+    "./logger": "./logger.ts",
+    "./rotating_file_handler": "./rotating_file_handler.ts"
+  }
+}

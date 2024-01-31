@@ -87,7 +87,7 @@ const base64abc = [
  *
  * @example
  * ```ts
- * import { encodeBase64 } from "https://deno.land/std@$STD_VERSION/encoding/base64.ts";
+ * import { encodeBase64 } from "@std/encoding/base64";
  *
  * encodeBase64("foobar"); // "Zm9vYmFy"
  * ```
@@ -127,7 +127,7 @@ export function encodeBase64(data: ArrayBuffer | Uint8Array | string): string {
  *
  * @example
  * ```ts
- * import { encodeBase64 } from "https://deno.land/std@$STD_VERSION/encoding/base64.ts";
+ * import { encodeBase64 } from "@std/encoding/base64";
  *
  * encodeBase64("foobar"); // "Zm9vYmFy"
  * ```

@@ -51,7 +51,7 @@ function convertBase64ToBase64url(b64: string) {
  *
  * @example
  * ```ts
- * import { encodeBase64Url } from "https://deno.land/std@$STD_VERSION/encoding/base64url.ts";
+ * import { encodeBase64Url } from "@std/encoding/base64url";
  *
  * encodeBase64Url(new TextEncoder().encode("foobar")); // "Zm9vYmFy"
  * ```
@@ -69,7 +69,7 @@ export function encodeBase64Url(
  *
  * @example
  * ```ts
- * import { decodeBase64Url } from "https://deno.land/std@$STD_VERSION/encoding/base64url.ts";
+ * import { decodeBase64Url } from "@std/encoding/base64url";
  *
  * decodeBase64Url("Zm9vYmFy"); // Uint8Array(6) [ 102, 111, 111, 98, 97, 114 ]
  * ```

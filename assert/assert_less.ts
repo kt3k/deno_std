@@ -8,7 +8,7 @@ import { AssertionError } from "./assertion_error.ts";
  *
  * @example
  * ```ts
- * import { assertLess } from "https://deno.land/std@$STD_VERSION/assert/assert_less.ts";
+ * import { assertLess } from "@std/assert/assert_less";
  *
  * assertLess(1, 2); // Doesn't throw
  * assertLess(2, 1); // Throws

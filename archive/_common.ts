@@ -1,7 +1,7 @@
 // Copyright 2018-2024 the Deno authors. All rights reserved. MIT license.
 
-import { PartialReadError } from "../io/buf_reader.ts";
-import type { Reader } from "../io/types.ts";
+import { PartialReadError } from "@std/io/buf_reader";
+import type { Reader } from "@std/io/types";
 
 export interface TarInfo {
   fileMode?: number;

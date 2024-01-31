@@ -32,7 +32,7 @@ export interface MoveOptions {
  *
  * @example
  * ```ts
- * import { move } from "https://deno.land/std@$STD_VERSION/fs/mod.ts";
+ * import { move } from "@std/fs";
  *
  * move("./foo", "./bar"); // returns a promise
  * ```
@@ -77,7 +77,7 @@ export async function move(
  *
  * @example
  * ```ts
- * import { moveSync } from "https://deno.land/std@$STD_VERSION/fs/mod.ts";
+ * import { moveSync } from "@std/fs";
  *
  * moveSync("./foo", "./bar"); // void
  * ```

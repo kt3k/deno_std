@@ -1,0 +1,10 @@
+{
+  "name": "@std/cli",
+  "version": "0.213.0",
+  "exports": {
+    ".": "./mod.ts",
+    "./parse_args": "./parse_args.ts",
+    "./prompt_secret": "./prompt_secret.ts",
+    "./spinner": "./spinner.ts"
+  }
+}
