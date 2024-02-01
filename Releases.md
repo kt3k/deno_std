@@ -1,3 +1,76 @@
+### 2024.02.01
+
+#### @std/io 0.215.0 (minor) 
+- BREAKING(io): remove `types.d.ts` (#4237)
+- feat(io): un-deprecate `Buffer` (#4184)
+- docs(io): fix `io` module is marked deprecated (#4252)
+
+#### @std/expect 0.213.2 (patch) 
+- fix(expect): add Error object equal check. (#4248)
+- fix(expect): align `toEqual` to jest (#4246)
+- fix(expect): fix the function signature of `toMatchObject()` (#4202)
+
+#### @std/log 0.215.0 (minor) 
+- BREAKING(log): remove string formatter (#4239)
+- BREAKING(log): single-export handler files (#4236)
+- feat(tools,log,http,semver): check mod exports, export items consistently from mod.ts  (#4229)
+- feat(log): make handlers disposable (#4195)
+- fix(log): make `flattenArgs()` private (#4214)
+- refactor(log): remove log private methods/properties underscore  (#4243)
+- refactor(log): tidy imports and exports (#4215)
+- refactor(log): replace deprecated imports (#4188)
+
+#### @std/http 0.215.0 (minor) 
+- BREAKING(http): remove `CookieMap` (#4179)
+- feat(tools,log,http,semver): check mod exports, export items consistently from mod.ts  (#4229)
+- docs(http): complete documentation (#4209)
+
+#### @std/semver 0.215.0 (minor) 
+- BREAKING(semver): remove `FormatStyle` (#4182)
+- BREAKING(semver): remove `compareBuild()` (#4181)
+- BREAKING(semver): remove `rsort()` (#4180)
+- feat(tools,log,http,semver): check mod exports, export items consistently from mod.ts  (#4229)
+- deprecation(semver): rename `eq()`, `neq()`, `lt()`, `lte()`, `gt()` and `gte()` (#4083)
+- deprecation(semver): deprecate `SemVerRange`, introduce `Range` (#4161)
+- deprecation(semver): deprecate `outside()` (#4185)
+- refactor(semver): replace `parseComparator()` with comparator objects (#4204)
+
+#### @std/streams 0.215.0 (minor) 
+- BREAKING(streams): remove `readAll()`, `writeAll()` and `copy()` (#4238)
+- docs(streams): remove `Deno.metrics()` use in example (#4217)
+
+#### @std/webgpu 0.213.2 (patch) 
+- refactor(webgpu): use internal `Deno.close()` for cleanup of WebGPU resources (#4231)
+
+#### @std/collections 0.215.0 (minor) 
+- feat(collections): pass `key` to `mapValues()` transformer (#4127)
+
+#### @std/toml 0.213.2 (patch) 
+- fix(toml): `parse()` duplicates the character next to reserved escape sequences (#4192)
+- docs(toml): complete documentation (#4223)
+- test(toml): improve test coverage (#4211)
+
+#### @std/path 0.213.2 (patch) 
+- deprecation(path): split off all constants into their own files and deprecate old names (#4153)
+
+#### @std/msgpack 0.213.2 (patch) 
+- docs(msgpack): complete documentation (#4220)
+
+#### @std/media_types 0.213.2 (patch) 
+- docs(media_types): complete documentation (#4219)
+
+#### @std/console 0.213.2 (patch) 
+- refactor(console): rename `_rle` to `_run_length.ts` (#4212)
+
+#### @std/fmt 0.213.2 (patch) 
+- fix(fmt): correct `stripColor()` deprecation notice (#4208)
+
+#### @std/flags 0.213.2 (patch) 
+- fix(flags): correct deprecation notices (#4207)
+
+#### @std/crypto 0.213.2 (patch) 
+- chore(crypto): upgrade to `rust@1.75.0` and `wasmbuild@0.15.5` (#4193)
+
 ### 2024.01.31
 
 #### @std/io 0.214.0 (minor) 
