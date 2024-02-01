@@ -20,3 +20,5 @@ jobs:
       - name: Run workspaces version bump
         run: |
           deno run -A https://deno.land/x/bump_workspaces@v0.1.0/cli.ts --dry-run
+        env:
+          GITHUB_TOKEN: ${{ secrets.BOT_TOKEN }}
