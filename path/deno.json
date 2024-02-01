@@ -1,6 +1,6 @@
 {
   "name": "@std/path",
-  "version": "0.213.2",
+  "version": "0.213.3",
   "exports": {
     ".": "./mod.ts",
     "./basename": "./basename.ts",

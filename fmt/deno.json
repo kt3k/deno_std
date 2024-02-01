@@ -1,6 +1,6 @@
 {
   "name": "@std/fmt",
-  "version": "0.213.2",
+  "version": "0.213.3",
   "exports": {
     "./bytes": "./bytes.ts",
     "./colors": "./colors.ts",

@@ -1,6 +1,6 @@
 {
   "name": "@std/console",
-  "version": "0.213.2",
+  "version": "0.213.3",
   "exports": {
     ".": "./mod.ts",
     "./unicode_width": "./unicode_width.ts"
