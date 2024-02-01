@@ -1,0 +1,22 @@
+name: version_bump_jsr
+
+on: workflow_dispatch
+
+jobs:
+  build:
+    name: version bump
+    runs-on: ubuntu-22.04
+    timeout-minutes: 15
+
+    steps:
+      - name: Clone repository
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+
+      - name: Set up Deno
+        uses: denoland/setup-deno@v1
+
+      - name: Run workspaces version bump
+        run: |
+          deno run -A https://deno.land/x/bump_workspaces@0.1.0/cli.ts
