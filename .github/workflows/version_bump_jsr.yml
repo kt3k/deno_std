@@ -19,4 +19,4 @@ jobs:
 
       - name: Run workspaces version bump
         run: |
-          deno run -A https://deno.land/x/bump_workspaces@0.1.0/cli.ts
+          deno run -A https://deno.land/x/bump_workspaces@0.1.0/cli.ts --dry-run
