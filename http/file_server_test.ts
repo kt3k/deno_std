@@ -239,6 +239,14 @@ Deno.test("serveDir() serves directory index with file's mode is 0", async () =>
   assertMatch(page, /<td class="mode">(\s)*- --- --- ---(\s)*<\/td>/);
 });
 
+Deno.test("serveDir() escapes file names when rendering directory index", async () => {
+  const res = await serveDir(new Request("http://localhost/"), serveDirOptions);
+  assertStringIncludes(
+    await res.text(),
+    '<a href="/%3Cimg%20src%3Dx%20onerror%3Dalert(1)%3E">&lt;img src=x onerror=alert(1)&gt;</a>',
+  );
+});
+
 Deno.test("serveDir() returns a response even if fileinfo is inaccessible", async () => {
   // Note: Deno.stat for windows system files may be rejected with os error 32.
   // Mock Deno.stat to test that the dirlisting page can be generated
