@@ -143,6 +143,7 @@ export class ProgressBar {
   #startTime: number;
   #lastTime: number;
   #lastValue: number;
+  #pipePromise: Promise<void>;
   /**
    * Constructs a new instance.
    *
@@ -184,7 +185,7 @@ export class ProgressBar {
     }
 
     const stream = new TextEncoderStream();
-    stream.readable
+    this.#pipePromise = stream.readable
       .pipeTo(writable, { preventClose: this.#options.keepOpen })
       .catch(() => clearInterval(this.#id));
     this.#writer = stream.writable.getWriter();
@@ -255,6 +256,7 @@ export class ProgressBar {
     await this.#print()
       .then(() => this.#writer.write(this.#options.clear ? "\r\u001b[K" : "\n"))
       .then(() => this.#writer.close())
+      .then(() => this.#pipePromise)
       .catch(() => {});
   }
 }
