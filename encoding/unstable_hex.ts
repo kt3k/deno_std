@@ -24,7 +24,6 @@
 import type { Uint8Array_ } from "./_types.ts";
 export type { Uint8Array_ };
 import { calcMax, decode, encode } from "./_common16.ts";
-export { calcMax };
 import { detach } from "./_common_detach.ts";
 
 const alphabet = new TextEncoder().encode("0123456789abcdef");
