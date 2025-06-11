@@ -1,0 +1,3 @@
+export const snapshot = {};
+
+snapshot[`isSnapshotMatch 1`] = `This green text has had its colors stripped`;

@@ -1,0 +1,8 @@
+export const snapshot = {};
+
+snapshot[`a snapshot test case 1`] = `
+{
+  bar: "World",
+  foo: "Hello",
+}
+`;
